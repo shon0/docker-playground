@@ -2,6 +2,8 @@ version: "3"
 services:
   db:
     image: postgres
+    # volumes:
+    #   - pgdtavol:/var/lib/postgresql/data
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
   web:
